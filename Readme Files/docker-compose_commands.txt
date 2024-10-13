@@ -1,0 +1,57 @@
+# Navigate to your project directory
+cd path\to\your\project
+
+# Start services
+docker-compose up
+
+# Start services in detached mode
+docker-compose up -d
+
+# Stop services
+docker-compose down
+
+# View logs
+docker-compose logs
+
+# Rebuild services
+docker-compose up --build
+
+# List running containers
+docker-compose ps
+
+# Execute a command in a running container
+docker-compose exec <service_name> <command>
+
+# Scale a specific service
+docker-compose up -d --scale <service_name>=<num_instances>
+
+# Stop and remove containers, networks, and volumes
+docker-compose down -v
+
+# Validate and view the Compose file
+docker-compose config
+
+# Pause services
+docker-compose pause
+
+# Unpause services
+docker-compose unpause
+
+# Show CPU and memory usage of containers
+docker-compose top
+
+# Pull images for services defined in the Compose file
+docker-compose pull
+
+# Restart services
+docker-compose restart
+
+# Force stop services
+docker-compose kill
+
+# Remove stopped service containers
+docker-compose rm
+
+# Create and start containers, but don't attach to them
+docker-compose up -d --no-deps <service_name>
+

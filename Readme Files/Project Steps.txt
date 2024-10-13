@@ -1,0 +1,15 @@
+step 1: Create application files
+    a. create html, js and css files as my frontend and backend
+    b. make configurations to run it on flask framework
+    c. create a docker image for application (image name = fp_web)
+
+step 2: Create a database service
+    a. Study how to configure connection between web container with DB conatiner.
+    b. create a docker image for the database (image name = fp_db)
+    c. create an S3 to save the database
+    d. study how does the database is stored and how can import/export the database.
+    e. create volume mapping between s3, database container and the host
+
+step 3: Testing
+    create a test environment to test availability of the data if we destroy the container.
+    Use one instance

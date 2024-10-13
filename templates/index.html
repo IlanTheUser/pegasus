@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Please fill in information</h1>
+        <form id="userForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="color">Favorite Color:</label>
+            <select id="color" name="color" required>
+                <option value="">Choose a color</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Purple">Purple</option>
+                <option value="Orange">Orange</option>
+                <option value="Pink">Pink</option>
+                <option value="Brown">Brown</option>
+                <option value="Gray">Gray</option>
+                <option value="Black">Black</option>
+            </select>
+            
+            <button type="submit">Save</button>
+        </form>
+        <a href="{{ url_for('results') }}" class="view-results">View Results</a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
